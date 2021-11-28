@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+    <h2>Play the Computer!</h2>
+
+    <h3>Enter your choice and see your result against the computer's random choice.</h3>
+
+    <form method="post" action="/computer/result">
+        <label for="player_1_name">1st Player's Name</label>
+        <input type="text" name="player_1_name" id="player_1_name">
+
+        <label for="player_1_choice">Choice</label>
+        <select name="player_1_choice" id="player_1_choice">
+            <option value="Rock">Rock</option>
+            <option value="Paper">Paper</option>
+            <option value="Scissors">Scissors</option>
+        </select>
+        <br>
+        <input type="submit" value="See Result">
+    </form>
+
+{% endblock content %}

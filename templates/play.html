@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+    <h2>Play a Friend!</h2>
+
+    <form method="post" action="/result">
+        <label for="player_1_name">1st Player's Name</label>
+        <input type="text" name="player_1_name" id="player_1_name">
+
+        <label for="player_1_choice">Choice</label>
+        <select name="player_1_choice" id="player_1_choice">
+            <option value="Rock">Rock</option>
+            <option value="Paper">Paper</option>
+            <option value="Scissors">Scissors</option>
+        </select>
+        <br>
+        <label for="player_2_name">2nd Player's Name</label>
+        <input type="text" name="player_2_name" id="player_2_name">
+
+        <label for="player_2_choice">Choice</label>
+        <select name="player_2_choice" id="player_2_choice">
+            <option value="Rock">Rock</option>
+            <option value="Paper">Paper</option>
+            <option value="Scissors">Scissors</option>
+        </select>
+        <input type="submit" value="See Result">
+    </form>
+
+{% endblock content %}

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <header>
+            <h1>Rock, Paper, Scissors</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/play">Play a friend</a></li>
+                <li><a href="/play/computer">Play against the computer</a></li>
+            </ul>
+        </nav>
+        <hr>
+        {% block content %}
+            <!-- variable content here -->
+        {% endblock content %}
+    </body>
+</html>
